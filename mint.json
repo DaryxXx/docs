@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Autoppia Documentation",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -18,74 +18,73 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:support@autoppia.com"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://dashboard.autoppia.com"
   },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
+      "name": "Overview",
+      "url": "overview"
+    },
+    {
+      "name": "AI Orquestration Layer",
+      "url": "ai-orquestration-layer"
+    },
+    {
+      "name": "Solutions",
+      "url": "solutions"
     }
   ],
   "anchors": [
     {
       "name": "Documentation",
       "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "url": "https://autoppia.com/docs"
     },
     {
       "name": "Community",
       "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "url": "https://autoppia.com/community"
     },
     {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://autoppia.com/blog"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Overview",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "overview/introduction",
+        "overview/gen-ai",
+        "overview/ai-impact"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "AI Orquestration Layer",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "ai-orquestration-layer/introduction",
+        "ai-orquestration-layer/management",
+        "ai-orquestration-layer/integration"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Solutions",
       "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "solutions/introduction",
+        "solutions/applications",
+        "solutions/ecosystem"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "x": "https://x.com/autoppia",
+    "github": "https://github.com/autoppia",
+    "linkedin": "https://www.linkedin.com/company/autoppia"
   }
 }
