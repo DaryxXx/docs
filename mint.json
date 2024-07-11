@@ -25,20 +25,61 @@
     "name": "Dashboard",
     "url": "https://dashboard.autoppia.com"
   },
-  "tabs": [
-    {
-      "name": "Overview",
-      "url": "overview"
-    },
-    {
-      "name": "AI Orquestration Layer",
-      "url": "ai-orquestration-layer"
-    },
-    {
-      "name": "Solutions",
-      "url": "solutions"
-    }
-  ],
+  "sidebar": {
+    "groups": [
+      {
+        "name": "Overview",
+        "pages": [
+          {
+            "name": "Introduction",
+            "url": "overview/introduction"
+          },
+          {
+            "name": "Gen AI",
+            "url": "overview/gen-ai"
+          },
+          {
+            "name": "AI Impact",
+            "url": "overview/ai-impact"
+          }
+        ]
+      },
+      {
+        "name": "AI Orquestration Layer",
+        "pages": [
+          {
+            "name": "Introduction",
+            "url": "ai-orquestration-layer/introduction"
+          },
+          {
+            "name": "Management",
+            "url": "ai-orquestration-layer/management"
+          },
+          {
+            "name": "Integration",
+            "url": "ai-orquestration-layer/integration"
+          }
+        ]
+      },
+      {
+        "name": "Solutions",
+        "pages": [
+          {
+            "name": "Introduction",
+            "url": "solutions/introduction"
+          },
+          {
+            "name": "Applications",
+            "url": "solutions/applications"
+          },
+          {
+            "name": "Ecosystem",
+            "url": "solutions/ecosystem"
+          }
+        ]
+      }
+    ]
+  },
   "anchors": [
     {
       "name": "Documentation",
@@ -54,32 +95,6 @@
       "name": "Blog",
       "icon": "newspaper",
       "url": "https://autoppia.com/blog"
-    }
-  ],
-  "navigation": [
-    {
-      "group": "Overview",
-      "pages": [
-        "overview/introduction",
-        "overview/gen-ai",
-        "overview/ai-impact"
-      ]
-    },
-    {
-      "group": "AI Orquestration Layer",
-      "pages": [
-        "ai-orquestration-layer/introduction",
-        "ai-orquestration-layer/management",
-        "ai-orquestration-layer/integration"
-      ]
-    },
-    {
-      "group": "Solutions",
-      "pages": [
-        "solutions/introduction",
-        "solutions/applications",
-        "solutions/ecosystem"
-      ]
     }
   ],
   "footerSocials": {
