@@ -1,0 +1,88 @@
+---
+title: Incentive Mechanism
+description: ''
+---
+
+## Incentive Mechanism
+
+As we mentioned, the purpose of this subnet is to create a Browser Assistant that can operate the browser on behalf of users. To achieve this goal we are going to borrow bittensor miners inteligence to achieve a specific goal: solve user requests and find out what tasks and sub-tasks are necessary and how to execute them. Bittensor will allow us to define a specific "incentive mechanism" that ultimately will lead miners to create a better pipeline for solving arbitrary user requests on a browser context. 
+
+## Subnet Pipeline
+
+This pipeline whole purpose is to successfully solve arbitrary user requests on browser context. To do so we have come up we the following phases:
+
+<Steps>
+  <Step title="User request definition">
+    Which is the user request and which is the browser context associated with that request?. Is
+  </Step>
+  <Step title="Workflow Generation">
+    By leveraging AI + Analytic tools or any other method miners will have to understand the request and "solve" it. By solving we mean finding the exact secuence of "actions" that when executed they will reach the desire outcome by the user. This solution to the request will be called from now on a "Workflow".
+  </Step>
+  <Step title="Workflow Validation">
+    Validators will receive this "workflow" and they will have to execute it on a virtual browser and evaluate how accurate the workflow is to give a score to miners.
+  </Step>
+</Steps>
+
+
+<br/>
+
+
+<br/>
+
+```mermaid
+flowchart TD
+%% Nodes
+    A("Real Request")
+    Z("Synthetic Prompts")
+    B(("Miner"))
+    C(("Workflow Generation"))
+    D{"Validator"}
+    E((User Browser))
+    F{"WorkFlow Execution"}
+    X(("Human Feedback"))
+    Y{"Validator"}
+    I(("Virtual Browser"))
+    W(("Synthetic Feedback"))
+    V("Bittensor")
+    R("Request + Browser Context")
+    S("Workflow")
+    Q("Weights")
+
+%% Edge connections between nodes
+    A --> B --> R --> C --> S --> D --> E --> F --> X --> Y
+    Z --> B
+    D  --> I --> F --> W --> Y --> Q --> V
+
+%% Individual node styling. Try the visual editor toolbar for easier styling!
+    style A color:#FFFFFF, fill:#F34727
+    style Z color:#FFFFFF, fill:#16CDD4
+    style B color:#FFFFFF, fill:#1A1A1A
+    style C color:#FFFFFF, fill:#FAC711
+    style D color:#FFFFFF, fill:#1A1A1A
+    style F color:#FFFFFF, fill:#FAC711
+    style E color:#FFFFFF, fill:#F34727
+    style X color:#FFFFFF, fill:#F34727
+    style I color:#FFFFFF, fill:#16CDD4
+    style W color:#FFFFFF, fill:#16CDD4
+    style Y color:#FFFFFF, fill:#414BB2
+    style V color:#FFFFFF, fill:#1A1A1A
+    style S color:#FFFFFF, fill:grey
+    style R color:#FFFFFF, fill:grey
+    style Q color:#FFFFFF, fill:grey
+
+
+
+
+    style E color:#FFFFFF, fill:#AA00FF, stroke:#AA00FF
+    style I color:#FFFFFF, stroke:#2962FF, fill:#2962FF
+
+%% You can add notes with two "%" signs in a row!
+
+```
+
+<br/>
+
+
+<Card title="Request Generation"  href="/browser-assistance-subnet/request-generation">
+  Lets explore this pipeline more in depth!
+</Card>
