@@ -1,0 +1,92 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Autoppia Docs",
+  "colors": {
+    "primary": "#F17D1E",
+    "light": "#F17D1E",
+    "dark": "#F17D1E"
+  },
+  "favicon": "/favicon.png",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Overview",
+        "icon": "chart-line",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "overview",
+              "ecosystem"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Web Operation",
+        "icon": "globe",
+        "groups": [
+          {
+            "group": "Web Operation",
+            "pages": [
+              "web-operation",
+              "infinite-web-arena",
+              "incentive-mechanism",
+              "automata",
+              "leaderboard"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Studio",
+        "icon": "palette",
+        "groups": [
+          {
+            "group": "Studio",
+            "pages": [
+              "autoppia-studio"
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "X",
+          "href": "https://x.com/AutoppiaAI",
+          "icon": "x-twitter"
+        },
+        {
+          "anchor": "Telegram",
+          "href": "https://x.com/AutoppiaAI",
+          "icon": "telegram"
+        }
+      ]
+    }
+  },
+  "logo": {
+    "light": "/logo/autoppia-light1.png",
+    "dark": "/logo/autoppia-dark.png"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:contact.support@autoppia.com"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://dashboard.mintlify.com"
+    }
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/AutoppiaAI"
+    }
+  }
+}

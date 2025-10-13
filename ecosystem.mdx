@@ -1,0 +1,159 @@
+---
+title: Ecosystem
+description: 'Autoppia ecosystem architecture and components'
+---
+
+The **Autoppia Ecosystem** is a platform where developers create AI Worker templates, users deploy them with their own data and services, and everyone gets paid through a pay-per-call model.
+
+This diagram shows how the ecosystem works: developers build templates in Developer Studio, publish them to the Marketplace, users discover and deploy them in User Studio, and the Workers run on Autoppia's infrastructure using the user's own configurations.
+
+<Frame>
+  <img src="/images/ecosystem_diagram.png" alt="Autoppia Ecosystem Architecture - Developer to User Workflow" />
+</Frame>
+
+**The diagram illustrates three key areas:**
+
+1. **Development and Marketplace Flow (Top)**: Developers create Worker Templates in Developer Studio, publish them to the Marketplace with revenue sharing, and users discover and purchase templates through User Studio.
+
+2. **Worker Template Composition (Bottom-Left)**: Shows how Worker Templates connect to external services like Gmail, OpenAI LLM, Twitter, and SQL databases through configurable connection points.
+
+3. **Infrastructure Deployment (Bottom-Right)**: Displays how deployed AI Workers run on Autoppia Infra and Chutes Infra, with each infrastructure hosting multiple worker instances.
+
+Here's a clear breakdown of each part:
+
+## 🎨 1. STUDIO - The Unified Platform
+
+**STUDIO** represents the unified creative and operational hub of the Autoppia Ecosystem, where innovation, commerce, and deployment converge into a seamless experience. This integrated platform combines three essential components:
+
+<CardGroup cols={2}>
+  <Card
+    title="Learn More"
+    icon="book-open"
+    href="/autoppia-studio"
+  >
+    Discover how STUDIO works and explore all its features
+  </Card>
+  <Card
+    title="Try STUDIO"
+    icon="rocket"
+    href="https://app.autoppia.com"
+  >
+    Start building and deploying AI Workers right now
+  </Card>
+</CardGroup>
+
+### 🧩 Developer Studio
+**The Innovation Engine** - Where AI Workers are born and crafted.
+
+- Developers create and manage AI Worker templates
+- Build sophisticated automation solutions with drag-and-drop simplicity
+- Access powerful development tools and AI assistance
+- Publish templates to the integrated Marketplace
+- Earn revenue through our innovative sharing model
+
+### 🛍️ Marketplace (Central Hub)
+**The Economic Heart** - Where ideas meet opportunity.
+
+- Seamlessly integrated within STUDIO for instant publishing
+- Developers showcase their AI Worker templates
+- Users discover, evaluate, and acquire automation solutions
+- Pay-per-call model ensures fair compensation for creators
+- Quality assurance and community-driven ratings
+
+### 🏗️ User Studio
+**The Deployment Command Center** - Where automation comes to life.
+
+- **Discover & Deploy**: Browse the Marketplace to find AI Worker templates created by developers
+- **Configure with Your Data**: Deploy templates and connect them with your own real configurations:
+  - Your OpenAI API key, Claude, or any LLM provider
+  - Your Gmail account, Twitter, or social media accounts
+  - Your Pinecone vector store or database connections
+  - Your SQL databases and business systems
+- **Abstract Templates**: Templates are completely abstract - they work with ANY compatible service you provide
+- **Flexible Deployment**: Deploy to Autoppia Infra for production or Chutes for testing/sandboxing
+- **Real-time Monitoring**: Track performance, costs, and usage analytics
+- **One-Click Management**: Start, stop, and scale your deployed Workers instantly
+
+**STUDIO's Unified Experience:**
+- Single sign-on across all three components
+- Seamless workflow from creation to deployment
+- Integrated communication between developers and users
+- Real-time collaboration and feedback loops
+
+## 🧠 2. Abstract Worker Templates and Integrations
+
+**The Power of Abstraction**: Worker Templates are completely abstract and flexible, designed to work with ANY compatible service you provide. This means:
+
+### 🔄 Template Flexibility
+- **No Vendor Lock-in**: Templates work with OpenAI, Claude, Gemini, or any LLM provider
+- **Your Data, Your Control**: Connect your own Gmail, Twitter, databases, and business systems
+- **Universal Compatibility**: Same template works with different users' configurations
+- **Example**: A "Social Media Manager" template can work with:
+  - User A: OpenAI + Gmail + Twitter + Pinecone
+  - User B: Claude + Outlook + LinkedIn + PostgreSQL
+  - User C: Gemini + Yahoo + Instagram + MongoDB
+
+### 🔌 Integration Examples
+When you deploy a template, you configure it with your own services:
+
+- **LLM Providers**: OpenAI, Claude, Gemini, or any compatible API
+- **Communication**: Gmail, Outlook, Slack, Discord, or any email/messaging service
+- **Social Media**: Twitter, LinkedIn, Instagram, Facebook, or any social platform
+- **Data Storage**: Pinecone, PostgreSQL, MongoDB, or any database/vector store
+- **Business Systems**: CRM, ERP, or any API-accessible business tool
+
+### 💰 Monetization Model
+
+**Pay-Per-Call System**: When you use templates created by other developers:
+
+- **Template Usage**: Pay a small fee per API call to the template creator
+- **Your LLM Costs**: You pay your own LLM provider (OpenAI, Claude, etc.) separately
+- **Infrastructure**: Autoppia handles the hosting and execution infrastructure
+- **Revenue Sharing**: Template creators earn from usage, encouraging quality and innovation
+
+**Example Cost Breakdown:**
+- Template usage: $0.01 per call (goes to template creator)
+- Your OpenAI API: $0.02 per call (you pay OpenAI directly)
+- Infrastructure: Included in Autoppia subscription
+- **Total**: You control your costs by choosing your LLM provider and usage patterns
+
+## ⚙️ 5. Infrastructure Layer
+
+The lower-right section shows the runtime environments where Workers operate:
+
+**Autoppia Infra:**
+Hosts AI Workers actively running and executing tasks — these are deployed, orchestrated versions of Worker Templates.
+Example: an AI Sales Worker or Web Operator acting in real-world web environments.
+
+**Chutes Infra:**
+A layer where Worker Templates are hosted, tested, or sandboxed before deployment — part of the development and experimentation pipeline.
+
+## 💡 How It All Connects
+
+The STUDIO ecosystem creates a seamless flow of innovation and automation:
+
+**Complete User Journey:**
+1. **Discover** → Browse the Marketplace to find AI Worker templates created by developers
+2. **Deploy** → Deploy templates and configure them with your own services (OpenAI, Gmail, Twitter, Pinecone, SQL, etc.)
+3. **Execute** → Workers run on Autoppia Infra or Chutes, using your configurations and data
+4. **Pay** → Pay per call to template creators while controlling your own LLM costs
+5. **Earn** → Developers earn from template usage, creating a sustainable economy
+
+**Real-World Example:**
+- **Template**: "Social Media Content Creator" (created by Developer X)
+- **Your Configuration**: OpenAI API + Gmail + Twitter + Pinecone + PostgreSQL
+- **Deployment**: Runs on Autoppia Infra with your real data
+- **Costs**: $0.01 per call to Developer X + your OpenAI costs + Autoppia infrastructure
+- **Result**: Automated social media content creation using your brand voice and data
+
+**The Complete AI Economy:**
+STUDIO (discover → configure → deploy) → Autoppia Infra (execute with your data) → Revenue (reward creators)
+
+This creates a self-sustaining ecosystem where:
+- **Abstract templates** work with any user's configurations and data
+- **Economic incentives** drive continuous improvement and adoption
+- **Users maintain control** over their data, LLM costs, and business logic
+- **Developers earn** from creating valuable, reusable automation solutions
+- **AI Workers** operate autonomously while generating value for all stakeholders
+
+The STUDIO represents the future of AI development — where abstract templates meet real-world data, creating a marketplace of intelligent automation that adapts to every user's unique needs and infrastructure.

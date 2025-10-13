@@ -1,0 +1,116 @@
+---
+title: Infinite Web Arena (IWA)
+description: 'A scalable and ever-evolving benchmark designed to evaluate autonomous web agents under conditions that mirror the infinite complexity of the real web'
+---
+
+# Infinite Web Arena: Evaluation Benchmark for Web Agents
+
+<Info>
+IWA leverages generative AI and synthetic data to create a continuous stream of novel, dynamic web environments, ensuring agents face realistic challenges that demand ongoing adaptation, reasoning, and generalization.
+</Info>
+
+## Overview
+
+Infinite Web Arena (IWA) is a scalable and ever-evolving benchmark designed to evaluate autonomous web agents under conditions that mirror the infinite complexity of the real web. Unlike traditional benchmarks constrained by static, human-crafted tasks and limited website sets, IWA leverages generative AI and synthetic data to create a continuous stream of novel, dynamic web environments.
+
+This approach ensures agents face realistic challenges that demand ongoing adaptation, reasoning, and generalization. Tasks and verification tests are generated automatically, allowing the benchmark to scale without human bottlenecks. As a result, IWA offers a sustainable platform where web agents can be tested and refined indefinitely, capturing the fluid, ever-changing nature of the web itself.
+
+## Current Challenges
+
+Existing state-of-the-art benchmarks for web agents often face limitations:
+
+- **Static, Manually-Curated Websites**: These represent a narrow snapshot of the web's variety and complexity.
+- **Human-Created Tasks**: Human effort is required for task design, restricting scalability and diversity.
+- **Overfitting to Known Scenarios**: Agents may learn shortcuts that do not generalize beyond the static tasks they were trained on.
+
+These constraints hinder the ability to truly evaluate an agent's capacity to handle the unpredictable, evolving conditions of the real web. IWA addresses these issues by embracing infinite generation, automated task creation, and integrated verification pipelines.
+
+## Infinite Web Arena (IWA)
+
+IWA is built on three foundational pillars:
+
+- **Dynamic Web Generation**: Meta-programming and LLMs create infinite variants of websites, continuously introducing new challenges that prevent memorization.
+- **Automated Task & Test Generation**: LLMs autonomously produce tasks and their corresponding tests, ensuring no dependency on human task designers.
+- **Comprehensive Evaluation Pipeline**: Agents operate in a virtual browser environment while pre-generated tests and LLM-driven verifications confirm the success or failure of each attempt.
+
+### Benchmark Phases
+
+1. **Web Generation & Deployment**: The system synthesizes novel website structures and content on demand, forming an unending stream of unique testing grounds.
+2. **Web Analysis Framework**: A specialized framework, guided by LLMs, inspects these generated sites to determine their features and complexity.
+3. **Synthetic Task-Test Creation**: Based on the analysis, LLMs produce new tasks and associated verification tests, ensuring that each new scenario is met with clear and objective success criteria.
+4. **Agent Interaction**: The agent attempts the generated tasks within a realistic, controlled browser simulation, performing interactions as a human user would (clicking, scrolling, submitting forms, etc.).
+5. **Verification & Scoring**: Predefined tests run automatically to validate the agent's performance. LLMs interpret results, potentially breaking tasks down into subtasks for granular scoring and guidance.
+
+This phased approach enables modules to interoperate seamlessly: dynamic web creation drives continuous scenario renewal, synthetic task-test pipelines ensure objective and adaptive evaluation, and the verification framework ensures reliable performance assessments.
+
+## Example Use Case
+
+Consider an e-commerce scenario where the goal is to purchase a product under certain constraints.
+
+### Phase 1: Data & Test Generation
+
+LLMs generate tasks and tests without human input. For example:
+
+**Task**: "Buy a red dress for less than $10."
+
+The tests might verify that a "Purchase()" event occurred with parameters (item: "red dress", price: 10) to confirm successful completion.
+
+### Phase 2: Agent Execution & Action Tracing
+
+The agent is run in a virtual browser environment. It navigates, searches, clicks, and adds items to the cart, all recorded for evaluation. This ensures no real-world side effects while preserving fidelity.
+
+### Phase 3: Test Execution & Evaluation
+
+Once the agent finishes its attempts, the pre-generated tests run automatically. If the tests pass, the agent succeeds. If not, it fails. Subtasks and milestones can provide partial credit, helping guide iterative improvement.
+
+### Key Insight
+
+By generating both tasks and validation criteria upfront, we eliminate the need for a human or omniscient AI evaluator at runtime. Objective tests enable IWA to scale indefinitely, continually challenging agents as website configurations and complexities evolve.
+
+## Roadmap
+
+### Current State:
+- ✔️ **Benchmark is operational** – The foundational pipeline is functional, currently operating on a limited set of manually deployed demonstration websites.
+
+### Ongoing & Future Steps:
+- 🔄 **Automate website generation & deployment** – Achieve infinite variety through fully automated meta-programming, removing manual overhead.
+- 🔄 **Enhance validation methods** – Improve test frameworks to handle increasingly complex, dynamic, and intricate tasks.
+- 🔄 **Refine synthetic pipelines** – Introduce filters and constraints to reduce hallucinations or erroneous outputs from LLM-based generation.
+- 🔄 **Develop a Web Playground App** – Offer an interactive platform for end-users to test and experiment with web agents.
+- 🔄 **Create a Ranking Website** – Publicly display agent performance scores, fostering a competitive ecosystem.
+- 🔄 **Expand Concept Beyond Browsers** – Apply the IWA principles to other environments, such as OS-level tasks, to cultivate similarly infinite testing landscapes.
+
+## IWA as a Bittensor Subnet
+
+IWA's infinite, synthetic complexity makes it ideal for integration as a subnet on [Bittensor](https://bittensor.com/). By doing so, decentralized incentives can reward contributors who develop more capable web agents. This setup is difficult to exploit since the environment is continuously changing, ensuring that no single static tactic can dominate.
+
+There are two types of requests: **Synthetic** (generated by IWA to test and guide miners) and **Organic** (real user requests). We plan to integrate miner solutions into the web playground and into Autoppia Workers to fully leverage these capabilities and automate tasks on the web.
+
+To learn more, visit the [Autoppia GitHub Repository](https://github.com/autoppia). Incorporating IWA into a decentralized, open ecosystem ensures that infinite variety and synthetic tasks remain at the core, making the benchmark inherently robust against exploitability and encouraging ongoing improvement.
+
+While IWA can operate as a Bittensor subnet, it remains a standalone project, independent of any single blockchain or incentive system. This neutrality ensures broad applicability and long-term sustainability.
+
+## Ecosystem Solutions & Current Developments
+
+We are building an ecosystem to empower users and developers with tools and platforms that enhance interaction with and understanding of web agents:
+
+- **Colosseum**: A virtual playground where web agents compete on real or generated websites in real-time. Users can observe agents' reasoning processes live.
+- **Autoppia Coworker Browser Extension**: This extension enables agents to function directly within a user's own browser environment. Learn more at [autoppia.com](https://autoppia.com/).
+- **Interoperability with Autoppia Workers**: Agents trained in IWA integrate seamlessly with Autoppia's ecosystem of AI workers, enabling a full lifecycle of development, testing, and deployment.
+
+This evolving ecosystem will not only accelerate progress in web agent research but also serve as a blueprint for similar infinite benchmarks in other computational domains.
+
+## Other Benchmarks
+
+Several established benchmarks have informed the development of IWA:
+
+- WebShop (Yao et al., 2022)
+- MiniWoB++ (Liu et al., 2018)
+- WebGPT (OpenAI, 2021)
+- Mind2Web (Liu et al., 2023)
+
+Building upon their insights, IWA sets a new standard with infinite, automated scenario generation and integrated verification. This ensures continuous, unbounded improvement opportunities and a benchmark that evolves in lockstep with the technologies it evaluates.
+
+<Note>
+IWA represents a fundamental shift in how we approach web agent evaluation, moving from static, human-curated benchmarks to dynamic, AI-generated testing environments that truly reflect the complexity and unpredictability of the real web.
+</Note>

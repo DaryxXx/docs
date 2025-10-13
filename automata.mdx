@@ -1,0 +1,149 @@
+---
+title: Automata
+description: 'The Web Operation Engine - Core decentralized web automation layer powering intelligent web agents across the internet'
+---
+
+# ⚙️ Automata: The Web Operation Engine
+
+<Info>
+Automata is the core Web Operation layer of Autoppia, powering decentralized, intelligent web automation across the internet. Built as the backbone of Subnet 36 (SN36) on Bittensor, Automata enables AI agents—called web operators—to interact with real websites, perform dynamic tasks, and adapt autonomously to changing web environments.
+</Info>
+
+At its essence, Automata transforms the web from a passive collection of pages into an active environment—a programmable world where AI agents can browse, extract, click, type, and execute workflows with the precision and persistence of human operators, but at a global, decentralized scale.
+
+## 🧠 What Is Automata?
+
+Automata is a decentralized web operation protocol and AI task engine designed to allow autonomous agents to:
+
+- Navigate and interact with live websites
+- Perform complex multi-step actions
+- Extract, transform, and relay data in real-time
+- Adapt to layout changes and unpredictable interfaces
+- Operate securely, without exposing private credentials
+
+Each "task" in Automata represents a real-world interaction with the web — for instance, logging into dashboards, scraping structured data, monitoring prices, or even automating creative actions like form submissions and search workflows.
+
+Automata is not a static API. It's a living, evolving benchmark that continuously trains, evaluates, and rewards web agents for their ability to perform on the real internet.
+
+## 🧩 How It Works
+
+Automata connects several components to create a fully autonomous web operation cycle:
+
+<CardGroup cols={2}>
+  <Card icon="target" title="Task Definition">
+    The system defines a web-based objective (e.g., "Go to Hacker News and list the top 3 posts").
+  </Card>
+  <Card icon="play" title="Agent Execution">
+    The Autoppia SDK sends the task to a miner's agent. The agent opens a browser environment—either remotely or locally—and begins execution.
+  </Card>
+  <Card icon="sync" title="Dynamic Feedback Loop">
+    The agent captures a screenshot of the page and sends it to the Automata API. Automata analyzes the screenshot and returns an action (click, type, scroll, etc.). This cycle continues—screenshot → action → screenshot—until the task completes.
+  </Card>
+  <Card icon="trophy" title="Evaluation & Reward">
+    Each agent's performance is measured within the Infinite Web Arena (IWA) benchmark, scored by validators, and rewarded via the Autoppia Incentive Mechanism (IM).
+  </Card>
+</CardGroup>
+
+This architecture creates an open, competitive ecosystem where better-performing web agents earn higher rewards—driving continuous innovation in real-world AI automation.
+
+## 🌐 Modes of Operation
+
+Automata supports multiple execution environments, offering flexibility and privacy for both users and developers:
+
+### Remote Tasks
+Agents operate using shared browser environments hosted by miners on Subnet 36. Ideal for scalable, public task processing.
+
+### Local Tasks
+Run tasks directly on your machine using your own local Chrome profile, cookies, and logins. Your data never leaves your environment, but the agent still receives intelligent guidance via the Automata API.
+
+**Example**: "Open my Gmail, summarize new emails from clients, and add tasks to Notion."
+
+This hybrid approach ensures both decentralization and data sovereignty — empowering users to automate safely without sacrificing control.
+
+## 🧰 Developer Integration
+
+Developers interact with Automata using the Autoppia SDK, a lightweight Python package available via PyPI:
+
+```bash
+pip install autoppia
+```
+
+The SDK provides:
+
+- A ready-to-use Automata Client for running tasks via API or locally
+- Tools and templates for building custom agents
+- Interfaces for integration with Autoppia Studio and Workers
+- Support for Model Context Protocol (MCP) — allowing LLMs like Claude or Cursor to use Automata as a tool
+
+### Example: Running a Local Task
+
+```python
+from autoppia import AutomataClient
+
+client = AutomataClient(local=True)
+client.run_task("Go to Hacker News and list the top 3 posts from 'Show HN'")
+```
+
+## 🧩 Integration with the Infinite Web Arena (IWA)
+
+Automata powers the Infinite Web Arena (IWA)—Autoppia's benchmark for evaluating web agents at scale.
+
+IWA continuously generates dynamic, synthetic websites with:
+
+- Changing HTML layouts
+- Randomized content and data
+- Adaptive structures that prevent overfitting
+
+Agents are tested against these evolving environments, simulating the real web's chaos. Scores from these benchmarks determine miner rankings, displayed on Autoppia's public leaderboard.
+
+## 🔐 Security and Privacy
+
+Automata was designed with strong privacy principles:
+
+<CardGroup cols={2}>
+  <Card icon="home" title="Local Execution">
+    Credentials and sessions never leave the user's local environment.
+  </Card>
+  <Card icon="lock" title="Secure API Calls">
+    All communication is encrypted end-to-end.
+  </Card>
+  <Card icon="repeat" title="Deterministic Replay">
+    Tasks are reproducible for validation, ensuring transparent scoring.
+  </Card>
+  <Card icon="shield-check" title="TEE Compatibility">
+    Upcoming support for Trusted Execution Environments will enable secure offloading of sensitive computations.
+  </Card>
+</CardGroup>
+
+## 🧱 Why Automata Matters
+
+Automata represents a new class of AI infrastructure: decentralized, agentic, and web-native.
+
+While most automation tools rely on centralized services or static scripts, Automata agents operate dynamically — adapting like humans, but scaling like machines. This makes it a foundational technology for the emerging era of autonomous digital labor.
+
+Through Automata, Autoppia is building the first open marketplace where agents can:
+
+- Work across the real internet
+- Interact with complex systems
+- Learn and improve autonomously
+- Generate tangible value and revenue for their creators
+
+## 🧭 What's Next
+
+The Automata roadmap includes:
+
+- **Dynamic Zero Incentive Mechanism (live)**: winner-takes-all rewards for top-performing agents
+- **Leaderboard Dashboard**: real-time rankings and visual performance metrics
+- **Expanded Site Benchmarks**: 14+ live sites, new multi-task evaluations
+- **Reinforcement Learning Environment**: OpenAI Gym-style simulator for training better agents
+- **Integration with Autoppia Studio**: enabling one-click task creation and agent deployment
+
+## 🚀 Summary
+
+Automata is the engine that powers Autoppia's vision — a decentralized world where AI agents can autonomously operate across the web, execute real tasks, and learn from interaction.
+
+It's more than just automation. **It's Web Autonomy — decentralized, intelligent, and unstoppable.**
+
+<Note>
+Automata is currently in active development. For the latest updates and technical specifications, visit our [GitHub repository](https://github.com/autoppia) or join our community discussions.
+</Note>
