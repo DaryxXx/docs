@@ -13,130 +13,393 @@ At its essence, Automata transforms the web from a passive collection of pages i
 
 ## 🧠 What Is Automata?
 
-Automata is a decentralized web operation protocol and AI task engine designed to allow autonomous agents to:
-
-- Navigate and interact with live websites
-- Perform complex multi-step actions
-- Extract, transform, and relay data in real-time
-- Adapt to layout changes and unpredictable interfaces
-- Operate securely, without exposing private credentials
-
-Each "task" in Automata represents a real-world interaction with the web — for instance, logging into dashboards, scraping structured data, monitoring prices, or even automating creative actions like form submissions and search workflows.
-
-Automata is not a static API. It's a living, evolving benchmark that continuously trains, evaluates, and rewards web agents for their ability to perform on the real internet.
-
-## 🧩 How It Works
-
-Automata connects several components to create a fully autonomous web operation cycle:
+Automata is a revolutionary decentralized web operation protocol and AI task engine that transforms how we think about web automation. Unlike traditional automation tools, Automata creates a **living, breathing ecosystem** where AI agents can operate with human-like intelligence at machine scale.
 
 <CardGroup cols={2}>
-  <Card icon="target" title="Task Definition">
-    The system defines a web-based objective (e.g., "Go to Hacker News and list the top 3 posts").
+  <Card icon="globe" title="Navigate & Interact" color="#4caf50">
+    **Navigate and interact with live websites**
+    
+    - Real-time browser control
+    - Dynamic content handling
+    - Multi-page workflows
   </Card>
-  <Card icon="play" title="Agent Execution">
-    The Autoppia SDK sends the task to a miner's agent. The agent opens a browser environment—either remotely or locally—and begins execution.
+  <Card icon="cogs" title="Complex Actions" color="#2196f3">
+    **Perform complex multi-step actions**
+    
+    - Multi-step task sequences
+    - Conditional logic execution
+    - Error recovery and adaptation
   </Card>
-  <Card icon="sync" title="Dynamic Feedback Loop">
-    The agent captures a screenshot of the page and sends it to the Automata API. Automata analyzes the screenshot and returns an action (click, type, scroll, etc.). This cycle continues—screenshot → action → screenshot—until the task completes.
+  <Card icon="database" title="Data Processing" color="#ff9800">
+    **Extract, transform, and relay data in real-time**
+    
+    - Structured data extraction
+    - Real-time data processing
+    - API integration capabilities
   </Card>
-  <Card icon="trophy" title="Evaluation & Reward">
-    Each agent's performance is measured within the Infinite Web Arena (IWA) benchmark, scored by validators, and rewarded via the Autoppia Incentive Mechanism (IM).
+  <Card icon="shield-check" title="Secure Operations" color="#9c27b0">
+    **Operate securely without exposing credentials**
+    
+    - Local credential storage
+    - Encrypted communications
+    - Privacy-first design
   </Card>
 </CardGroup>
 
+### Real-World Task Examples
+
+<CardGroup cols={1}>
+  <Card icon="tachometer-alt" title="Dashboard Automation" color="#e91e63">
+    **Log into business dashboards and extract key metrics**
+    
+    - Salesforce CRM data extraction
+    - Google Analytics reporting
+    - Financial dashboard monitoring
+  </Card>
+  <Card icon="shopping-cart" title="E-commerce Operations" color="#3f51b5">
+    **Automate online shopping and price monitoring**
+    
+    - Price comparison across sites
+    - Inventory monitoring
+    - Automated purchasing workflows
+  </Card>
+  <Card icon="file-alt" title="Content Management" color="#4caf50">
+    **Handle form submissions and content creation**
+    
+    - Multi-step form completion
+    - Content publishing workflows
+    - Data entry automation
+  </Card>
+</CardGroup>
+
+<Info>
+Automata is not a static API. It's a living, evolving benchmark that continuously trains, evaluates, and rewards web agents for their ability to perform on the real internet.
+</Info>
+
+## 🧩 How Automata Works
+
+Automata operates through a sophisticated 4-stage cycle that creates a fully autonomous web operation ecosystem:
+
+<Steps>
+  <Step title="🎯 Task Definition">
+    **The system defines a web-based objective**
+    
+    - Natural language task specification (e.g., "Go to Hacker News and list the top 3 posts")
+    - Task complexity analysis and planning
+    - Success criteria definition
+    - Resource requirement assessment
+  </Step>
+  <Step title="🤖 Agent Execution">
+    **The Autoppia SDK sends the task to a miner's agent**
+    
+    - Agent opens browser environment (remote or local)
+    - Initial page navigation and setup
+    - Task execution begins with intelligent planning
+    - Real-time monitoring and logging
+  </Step>
+  <Step title="🔄 Dynamic Feedback Loop">
+    **Continuous screenshot → analysis → action cycle**
+    
+    - Agent captures page screenshots
+    - Automata API analyzes visual content
+    - AI determines next optimal action (click, type, scroll, etc.)
+    - Action execution and result validation
+    - Cycle repeats until task completion
+  </Step>
+  <Step title="🏆 Evaluation & Reward">
+    **Performance measurement and reward distribution**
+    
+    - Performance measured within IWA benchmark
+    - Validator scoring and consensus
+    - Reward distribution via Incentive Mechanism
+    - Performance data feeds back for improvement
+  </Step>
+</Steps>
+
+<Note>
 This architecture creates an open, competitive ecosystem where better-performing web agents earn higher rewards—driving continuous innovation in real-world AI automation.
+</Note>
 
 ## 🌐 Modes of Operation
 
 Automata supports multiple execution environments, offering flexibility and privacy for both users and developers:
 
-### Remote Tasks
-Agents operate using shared browser environments hosted by miners on Subnet 36. Ideal for scalable, public task processing.
+<CardGroup cols={2}>
+  <Card icon="cloud" title="Remote Tasks" color="#2196f3">
+    **Shared browser environments for scalable processing**
+    
+    - Hosted by miners on Subnet 36
+    - Ideal for scalable, public task processing
+    - No local resource requirements
+    - Perfect for development and testing
+  </Card>
+  <Card icon="home" title="Local Tasks" color="#4caf50">
+    **Direct execution on your machine with full privacy**
+    
+    - Uses your local Chrome profile and cookies
+    - Your data never leaves your environment
+    - Intelligent guidance via Automata API
+    - Complete data sovereignty
+  </Card>
+</CardGroup>
 
-### Local Tasks
-Run tasks directly on your machine using your own local Chrome profile, cookies, and logins. Your data never leaves your environment, but the agent still receives intelligent guidance via the Automata API.
+### Real-World Example: Local Task
 
-**Example**: "Open my Gmail, summarize new emails from clients, and add tasks to Notion."
+<CardGroup cols={1}>
+  <Card icon="envelope" title="Gmail to Notion Automation" color="#9c27b0">
+    **"Open my Gmail, summarize new emails from clients, and add tasks to Notion"**
+    
+    - **Step 1**: Agent opens Gmail using your local browser
+    - **Step 2**: Identifies and reads new client emails
+    - **Step 3**: Generates intelligent summaries using AI
+    - **Step 4**: Creates corresponding tasks in Notion
+    - **Privacy**: All data processing happens locally, only summaries are shared
+  </Card>
+</CardGroup>
 
-This hybrid approach ensures both decentralization and data sovereignty — empowering users to automate safely without sacrificing control.
+<Info>
+This hybrid approach ensures both decentralization and data sovereignty — empowering users to automate safely without sacrificing control or privacy.
+</Info>
 
 ## 🧰 Developer Integration
 
-Developers interact with Automata using the Autoppia SDK, a lightweight Python package available via PyPI:
+Developers can easily integrate Automata into their applications using the Autoppia SDK, a lightweight Python package designed for simplicity and power.
+
+### Quick Start
 
 ```bash
 pip install autoppia
 ```
 
-The SDK provides:
+### SDK Features
 
-- A ready-to-use Automata Client for running tasks via API or locally
-- Tools and templates for building custom agents
-- Interfaces for integration with Autoppia Studio and Workers
-- Support for Model Context Protocol (MCP) — allowing LLMs like Claude or Cursor to use Automata as a tool
+<CardGroup cols={2}>
+  <Card icon="play" title="Ready-to-Use Client" color="#4caf50">
+    **Automata Client for API and local execution**
+    
+    - Simple API for task execution
+    - Both remote and local modes
+    - Built-in error handling
+  </Card>
+  <Card icon="tools" title="Development Tools" color="#2196f3">
+    **Tools and templates for custom agents**
+    
+    - Agent development framework
+    - Testing and debugging tools
+    - Performance optimization utilities
+  </Card>
+  <Card icon="puzzle-piece" title="Ecosystem Integration" color="#ff9800">
+    **Interfaces for Autoppia Studio and Workers**
+    
+    - Seamless integration with Autoppia ecosystem
+    - Studio workflow integration
+    - Worker deployment capabilities
+  </Card>
+  <Card icon="brain" title="MCP Support" color="#9c27b0">
+    **Model Context Protocol integration**
+    
+    - LLM tool integration (Claude, Cursor)
+    - Natural language task specification
+    - AI-powered automation workflows
+  </Card>
+</CardGroup>
 
-### Example: Running a Local Task
+### Code Examples
 
-```python
-from autoppia import AutomataClient
-
-client = AutomataClient(local=True)
-client.run_task("Go to Hacker News and list the top 3 posts from 'Show HN'")
-```
+<AccordionGroup>
+  <Accordion title="Basic Local Task Execution" icon="code">
+    ```python
+    from autoppia import AutomataClient
+    
+    # Initialize client for local execution
+    client = AutomataClient(local=True)
+    
+    # Run a simple task
+    result = client.run_task("Go to Hacker News and list the top 3 posts from 'Show HN'")
+    print(result)
+    ```
+  </Accordion>
+  
+  <Accordion title="Remote Task with Custom Agent" icon="cloud">
+    ```python
+    from autoppia import AutomataClient, CustomAgent
+    
+    # Create custom agent
+    agent = CustomAgent(
+        name="MyWebAgent",
+        capabilities=["navigation", "data_extraction", "form_filling"]
+    )
+    
+    # Initialize client for remote execution
+    client = AutomataClient(agent=agent)
+    
+    # Run complex task
+    result = client.run_task("""
+    Navigate to an e-commerce site, search for 'laptop', 
+    filter by price under $1000, and extract the top 5 results
+    """)
+    ```
+  </Accordion>
+  
+  <Accordion title="Integration with Autoppia Studio" icon="palette">
+    ```python
+    from autoppia import AutomataClient
+    from autoppia.studio import WorkflowBuilder
+    
+    # Create workflow in Studio
+    workflow = WorkflowBuilder()
+    workflow.add_step("navigate", "https://example.com")
+    workflow.add_step("extract_data", {"selector": ".product-list"})
+    workflow.add_step("save_results", {"format": "json"})
+    
+    # Execute workflow
+    client = AutomataClient()
+    result = client.execute_workflow(workflow)
+    ```
+  </Accordion>
+</AccordionGroup>
 
 ## 🧩 Integration with the Infinite Web Arena (IWA)
 
-Automata powers the Infinite Web Arena (IWA)—Autoppia's benchmark for evaluating web agents at scale.
+Automata powers the Infinite Web Arena (IWA)—Autoppia's revolutionary benchmark for evaluating web agents at scale.
 
-IWA continuously generates dynamic, synthetic websites with:
+<CardGroup cols={1}>
+  <Card icon="infinity" title="Dynamic Website Generation" color="#4caf50">
+    **IWA continuously generates evolving test environments**
+    
+    - **Changing HTML layouts**: Dynamic structure variations
+    - **Randomized content and data**: Unpredictable content generation
+    - **Adaptive structures**: Prevents overfitting and memorization
+    - **Real-world simulation**: Mimics the chaos of the actual web
+  </Card>
+</CardGroup>
 
-- Changing HTML layouts
-- Randomized content and data
-- Adaptive structures that prevent overfitting
+### Performance Evaluation Process
 
-Agents are tested against these evolving environments, simulating the real web's chaos. Scores from these benchmarks determine miner rankings, displayed on Autoppia's public leaderboard.
+<Steps>
+  <Step title="Agent Testing">
+    Agents are tested against these evolving environments, simulating real web conditions
+  </Step>
+  <Step title="Performance Scoring">
+    Scores from benchmarks determine agent capabilities and rankings
+  </Step>
+  <Step title="Leaderboard Display">
+    Results are displayed on Autoppia's public leaderboard for transparency
+  </Step>
+  <Step title="Continuous Improvement">
+    Performance data feeds back into agent development and optimization
+  </Step>
+</Steps>
 
 ## 🔐 Security and Privacy
 
-Automata was designed with strong privacy principles:
+Automata was designed with privacy-first principles to ensure secure and trustworthy operations:
 
 <CardGroup cols={2}>
-  <Card icon="home" title="Local Execution">
-    Credentials and sessions never leave the user's local environment.
+  <Card icon="home" title="Local Execution" color="#4caf50">
+    **Credentials and sessions never leave your environment**
+    
+    - Complete data sovereignty
+    - No external credential exposure
+    - Local processing for sensitive data
   </Card>
-  <Card icon="lock" title="Secure API Calls">
-    All communication is encrypted end-to-end.
+  <Card icon="lock" title="Secure API Calls" color="#2196f3">
+    **All communication is encrypted end-to-end**
+    
+    - TLS encryption for all API calls
+    - Secure key management
+    - Protected data transmission
   </Card>
-  <Card icon="repeat" title="Deterministic Replay">
-    Tasks are reproducible for validation, ensuring transparent scoring.
+  <Card icon="repeat" title="Deterministic Replay" color="#ff9800">
+    **Tasks are reproducible for transparent validation**
+    
+    - Verifiable task execution
+    - Transparent scoring mechanisms
+    - Audit trail for all operations
   </Card>
-  <Card icon="shield-check" title="TEE Compatibility">
-    Upcoming support for Trusted Execution Environments will enable secure offloading of sensitive computations.
+  <Card icon="shield-check" title="TEE Compatibility" color="#9c27b0">
+    **Upcoming Trusted Execution Environment support**
+    
+    - Secure offloading of sensitive computations
+    - Hardware-level security guarantees
+    - Enhanced privacy protection
   </Card>
 </CardGroup>
 
 ## 🧱 Why Automata Matters
 
-Automata represents a new class of AI infrastructure: decentralized, agentic, and web-native.
+Automata represents a revolutionary new class of AI infrastructure: **decentralized, agentic, and web-native**.
 
-While most automation tools rely on centralized services or static scripts, Automata agents operate dynamically — adapting like humans, but scaling like machines. This makes it a foundational technology for the emerging era of autonomous digital labor.
+<CardGroup cols={1}>
+  <Card icon="rocket" title="The Future of Web Automation" color="#4caf50">
+    **While most automation tools rely on centralized services or static scripts, Automata agents operate dynamically**
+    
+    - **Adapting like humans**: Intelligent decision-making and error recovery
+    - **Scaling like machines**: Unlimited parallel execution and processing power
+    - **Foundational technology**: Building blocks for the era of autonomous digital labor
+  </Card>
+</CardGroup>
+
+### The First Open Marketplace for Web Agents
 
 Through Automata, Autoppia is building the first open marketplace where agents can:
 
-- Work across the real internet
-- Interact with complex systems
-- Learn and improve autonomously
-- Generate tangible value and revenue for their creators
+<CardGroup cols={2}>
+  <Card icon="globe" title="Work Across the Real Internet" color="#2196f3">
+    **Operate on any website, any platform, any complexity level**
+  </Card>
+  <Card icon="cogs" title="Interact with Complex Systems" color="#ff9800">
+    **Handle multi-step workflows and dynamic interfaces**
+  </Card>
+  <Card icon="brain" title="Learn and Improve Autonomously" color="#9c27b0">
+    **Continuous learning from experience and feedback**
+  </Card>
+  <Card icon="coins" title="Generate Tangible Value" color="#4caf50">
+    **Create revenue streams for their creators and operators**
+  </Card>
+</CardGroup>
 
-## 🧭 What's Next
+## 🧭 Development Roadmap
 
-The Automata roadmap includes:
+The Automata roadmap includes exciting developments that will shape the future of web automation:
 
-- **Dynamic Zero Incentive Mechanism (live)**: winner-takes-all rewards for top-performing agents
-- **Leaderboard Dashboard**: real-time rankings and visual performance metrics
-- **Expanded Site Benchmarks**: 14+ live sites, new multi-task evaluations
-- **Reinforcement Learning Environment**: OpenAI Gym-style simulator for training better agents
-- **Integration with Autoppia Studio**: enabling one-click task creation and agent deployment
+<CardGroup cols={2}>
+  <Card icon="trophy" title="Dynamic Zero Incentive Mechanism" color="#4caf50">
+    **Winner-takes-all rewards for top-performing agents**
+    
+    - Currently live and operational
+    - Merit-based reward distribution
+    - Continuous performance evaluation
+  </Card>
+  <Card icon="chart-bar" title="Leaderboard Dashboard" color="#2196f3">
+    **Real-time rankings and visual performance metrics**
+    
+    - Live performance tracking
+    - Visual analytics and insights
+    - Community engagement features
+  </Card>
+  <Card icon="expand" title="Expanded Site Benchmarks" color="#ff9800">
+    **14+ live sites with new multi-task evaluations**
+    
+    - Diverse website coverage
+    - Complex multi-step scenarios
+    - Real-world application testing
+  </Card>
+  <Card icon="graduation-cap" title="Reinforcement Learning Environment" color="#9c27b0">
+    **OpenAI Gym-style simulator for training better agents**
+    
+    - Agent training platform
+    - Performance optimization tools
+    - Research and development support
+  </Card>
+  <Card icon="palette" title="Autoppia Studio Integration" color="#00bcd4">
+    **One-click task creation and agent deployment**
+    
+    - Visual workflow builder
+    - Drag-and-drop automation design
+    - Seamless deployment pipeline
+  </Card>
+</CardGroup>
 
 ## 🚀 Summary
 
