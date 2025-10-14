@@ -13,25 +13,52 @@
       {
         "tab": "Overview",
         "icon": "chart-line",
-        "pages": [ 
-          "overview",
-          "ecosystem",
-          "user-journey"
-        ]
+        "pages": [
+          {
+            "page": "overview",
+            "label": "💥 Vision"
+          },
+          {
+            "page": "ecosystem",
+            "label": "🏗️ Ecosystem"
+          },
+          {
+            "page": "user-journey",
+            "label": "🚀 User Journey"
+          }
+        ],
+        "link": "/overview",
+        "defaultPath": "/overview"
       },
       {
         "tab": "Web Operation",
         "icon": "globe",
-        "groups": [
+        "link": "/web-operation",
+        "defaultPath": "/web-operation",
+        "pages": [
           {
-            "group": "Web Operation",
-            "pages": [
-              "web-operation",
-              "infinite-web-arena",
-              "incentive-mechanism",
-              "automata",
-              "leaderboard"
-            ]
+            "page": "web-operation",
+            "label": "Overview"
+          },
+          {
+            "page": "infinite-web-arena",
+            "label": "Infinite Web Arena (IWA)"
+          },
+          {
+            "page": "subnet-36-web-agents",
+            "label": "Subnet 36 - Web Agents"
+          },
+          {
+            "page": "incentive-mechanism",
+            "label": "Incentive Mechanism"
+          },
+          {
+            "page": "automata",
+            "label": "Automata"
+          },
+          {
+            "page": "leaderboard",
+            "label": "Leaderboard"
           }
         ]
       },
@@ -40,16 +67,102 @@
         "icon": "palette",
         "groups": [
           {
-            "group": "Studio",
+            "group": "STUDIO",
             "pages": [
-              "autoppia-studio"
+              {
+                "page": "autoppia-studio",
+                "label": "Overview"
+              },
+              {
+                "page": "ai-workers",
+                "label": "AI Workers"
+              },
+              {
+                "page": "use-case-example",
+                "label": "Use-case"
+              }
+            ]
+          },
+          {
+            "group": "ECOSYSTEM",
+            "pages": [
+              {
+                "page": "ecosystem",
+                "label": "Overview"
+              },
+              {
+                "page": "sdk",
+                "label": "SDK"
+              },
+              {
+                "page": "infra-layer",
+                "label": "Infra-Layer"
+              },
+              {
+                "page": "application-layer",
+                "label": "Application-Layer"
+              }
+            ]
+          },
+          {
+            "group": "USER STUDIO",
+            "pages": [
+              {
+                "page": "user-studio-get-started",
+                "label": "Get Started"
+              },
+              {
+                "page": "worker-configuration",
+                "label": "Worker Configuration"
+              },
+              {
+                "page": "worker-deployment",
+                "label": "Deploying a Worker"
+              },
+              {
+                "page": "payments",
+                "label": "Payments"
+              }
+            ]
+          },
+          {
+            "group": "DEVELOPER STUDIO",
+            "pages": [
+              {
+                "page": "developer-get-started",
+                "label": "Get Started"
+              },
+              {
+                "page": "my-templates",
+                "label": "Worker Templates"
+              },
+              {
+                "page": "publish-template",
+                "label": "Publish"
+              },
+              {
+                "page": "monetization",
+                "label": "Monetization"
+              }
             ]
           }
-        ]
+        ],
+        "link": "/autoppia-studio",
+        "defaultPath": "/autoppia-studio"
       }
     ],
     "global": {
       "anchors": [
+        {
+          "anchor": "GitHub",
+          "href": "https://github.com/autoppia",
+          "icon": "github"
+        },
+        {
+          "anchor": "Discord",
+          "href": "https://discord.gg/autoppia",
+          "icon": "discord"
+        },
         {
           "anchor": "X",
           "href": "https://x.com/AutoppiaAI",
@@ -57,8 +170,23 @@
         },
         {
           "anchor": "Telegram",
-          "href": "https://x.com/AutoppiaAI",
+          "href": "https://t.me/autoppia",
           "icon": "telegram"
+        },
+        {
+          "anchor": "Leaderboard",
+          "href": "https://docs.autoppia.com/leaderboard",
+          "icon": "trophy"
+        },
+        {
+          "anchor": "Studio",
+          "href": "https://docs.autoppia.com/autoppia-studio",
+          "icon": "palette"
+        },
+        {
+          "anchor": "Automata",
+          "href": "https://docs.autoppia.com/automata",
+          "icon": "cogs"
         }
       ]
     }
@@ -69,6 +197,18 @@
   },
   "navbar": {
     "links": [
+      {
+        "label": "Leaderboard",
+        "href": "https://docs.autoppia.com/leaderboard"
+      },
+      {
+        "label": "Studio",
+        "href": "https://docs.autoppia.com/autoppia-studio"
+      },
+      {
+        "label": "Automata",
+        "href": "https://docs.autoppia.com/automata"
+      },
       {
         "label": "Support",
         "href": "mailto:contact.support@autoppia.com"
