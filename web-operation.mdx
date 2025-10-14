@@ -13,70 +13,69 @@ Web Operation represents the next evolution in business automation, where AI sea
 
 ## Overview
 
-Web Operation is the foundation of Autoppia's approach to business automation. It's built on the principle that **the best way to automate business processes is to work with existing tools, not against them**.
+Web Operation underpins Autoppia’s automation stack by teaching agents to operate the software you already rely on. Rather than rebuild interfaces or stitch together one-off APIs, we layer reasoning and execution directly on top of live web applications.
 
 ### Traditional Challenges
 
-Most automation solutions require:
-- **Complete system rebuilds** for AI compatibility
-- **Expensive integrations** with limited platforms
-- **Rigid workflows** that break when systems change
-- **Human bottlenecks** for complex task validation
+Conventional automation forces teams into compromises:
+- **Brittle scripts** that collapse when a button moves or copy changes
+- **Costly custom integrations** limited to a handful of supported tools
+- **Fragmented governance** because workflows sit outside existing systems
+- **Constant human spot-checks** to keep the lights on
 
 ### Autoppia Solution
 
-Our Web Operation technology enables:
-- **Zero-rebuild automation** using existing web interfaces
-- **Universal compatibility** with any web-based platform
-- **Adaptive intelligence** that learns and evolves with your systems
-- **Infinite scalability** through our evaluation framework
+Web Operation flips the model:
+- **Zero rebuild:** Agents work through native web UIs, no re-platforming required.
+- **Universal coverage:** Any browser-based product becomes automatable on day one.
+- **Adaptive control loops:** Agents observe, plan, and adjust as layouts shift.
+- **Continuous validation:** Infinite Web Arena (IWA) stress-tests every capability.
 
 ### How It Works
 
-Our AI Workers can navigate browsers, interact with interfaces, and perform tasks inside existing web software including:
+Autoppia AI Workers operate through real browsers. They perceive the DOM, reason over goals, and issue actions (click, type, submit, wait) until a task is complete. The same control plane supports:
 
 <CardGroup cols={2}>
   <Card icon="cloud" title="SaaS Platforms">
-    Salesforce, HubSpot, Slack, Microsoft 365, Google Workspace, and more
+    Salesforce, HubSpot, Slack, Microsoft 365, Google Workspace—plus long-tail SaaS apps
   </Card>
   <Card icon="building" title="Enterprise Systems">
-    SAP, Oracle, Microsoft Dynamics, Workday, ServiceNow
+    SAP, Oracle, Microsoft Dynamics, Workday, ServiceNow, Service Cloud
   </Card>
   <Card icon="users" title="CRM Systems">
-    Pipedrive, Zoho, Monday.com, Airtable, Notion
+    Pipedrive, Zoho, monday.com, Airtable, Notion, proprietary customer consoles
   </Card>
   <Card icon="chart-line" title="Business Tools">
-    QuickBooks, Asana, Trello, Jira, Confluence
+    QuickBooks, Netsuite dashboards, Asana, Trello, Jira, Confluence, Linear
   </Card>
 </CardGroup>
 
 ### Core Pillars
 
-Web Operation is built on four foundational pillars that work together to create a comprehensive web automation ecosystem:
+Four subsystems keep Web Operation honest, scalable, and continuously improving:
 
 <CardGroup cols={2}>
   <Card icon="globe" title="Infinite Web Arena (IWA)" href="/infinite-web-arena">
-    Scalable evaluation framework that generates infinite website variations and automated tasks for continuous testing
+    A generative benchmark that spins up fresh sites, tasks, and validators every epoch to prevent overfitting
   </Card>
   <Card icon="cogs" title="Automata" href="/automata">
-    The core Web Operation engine that powers decentralized, intelligent web automation across the internet
+    The execution engine that brokers tasks between validators, miners, and user workloads through real browsers
   </Card>
   <Card icon="trophy" title="Incentive Mechanism" href="/incentive-mechanism">
-    Merit-based reward system that drives continuous improvement and innovation in web agent development
+    On-chain economics rewarding agents that deliver reliable completions under changing conditions
   </Card>
   <Card icon="chart-bar" title="Leaderboard" href="/leaderboard">
-    Real-time performance tracking and ranking system that visualizes agent performance and network health
+    A live scoreboard broadcasting performance, regressions, and breakthrough behaviors across the subnet
   </Card>
 </CardGroup>
 
 ### Autoppia Operator
 
-Our proprietary Web Operator leverages the entire Web Operation stack to provide:
-
-- **Real-time web interaction** capabilities
-- **Context-aware decision making** in dynamic environments
-- **Multi-platform compatibility** across different web architectures
-- **Continuous learning** from interaction patterns
+Autoppia’s production operator packages these pillars into a unified runtime:
+- **Live web control:** Deterministic browser sessions with screenshot, DOM, and action traces.
+- **Goal-driven reasoning:** Chain-of-thought planning plus recovery strategies when flows diverge.
+- **Cross-app orchestration:** Compose actions across multiple tools in one instruction.
+- **Feedback loops:** Post-task analytics feed back into Automata and miner training sets.
 
 ## Infinite Web Arena (IWA)
 
@@ -103,53 +102,56 @@ For detailed information about the Infinite Web Arena framework, including setup
 
 ## Subnet 36 - Web Agents
 
-### Web Agents - SN36
-Subnet 36 on Taostats
+<Tip>
+Dive deeper into network design, incentives, and benchmarks in the dedicated [Subnet 36 - Web Agents](/subnet-36-web-agents) page.
+</Tip>
 
-We’re powering decentralized AI agents that master real-world web tasks. Bittensor Subnet 36 (SN36) is our core incentive layer, built to crowdsource the world’s best web operators.
+### Why Subnet 36 exists
+Subnet 36 (SN36) is Autoppia’s incentive layer on Bittensor. It turns web agent research into an open market by rewarding the miners whose agents complete real browser tasks most reliably.
 
-### What are web agents?
-Web agents are autonomous AI systems that interact with any website like a human: navigating dynamic pages, filling forms, extracting data, completing transactions, and adapting to changes without breaking.
+### What actually happens on SN36
 
-Unlike rigid RPA tools that need manual programming for every step and fail on UI updates, web agents reason, decide, and execute goals intelligently. They handle surprises, edge cases, and evolving sites with zero hardcoded scripts.
+<Steps>
+  <Step title="Validators craft challenges">
+    Infinite Web Arena generates dynamic workflows (e.g., ecommerce purchases, CRM updates, compliance checks) and wraps them in sandboxed browser sessions.
+  </Step>
+  <Step title="Miners submit operators">
+    Teams register web agents capable of reasoning through unfamiliar interfaces, handling auth, and delivering structured outputs.
+  </Step>
+  <Step title="Scoring & weighting">
+    Validators grade accuracy, efficiency, robustness, and speed; scores update miner weights on-chain.
+  </Step>
+  <Step title="Rewards & learnings">
+    TAO emissions flow to top performers, while telemetry feeds back into Automata and Studio workflows.
+  </Step>
+</Steps>
 
-### Why a Bittensor subnet?
-Bittensor’s unique design aligns perfectly with our vision: turning web agent innovation into a competitive economy. Subnet 36 incentivizes miners to build and refine state-of-the-art web agents, rewarding top performers with TAO emissions.
+### Why Bittensor is the substrate
+- **Permissionless participation:** Anyone can launch a miner, pushing web-operation breakthroughs from around the world.
+- **Transparent incentives:** On-chain weights, payouts, and logs make performance auditable.
+- **Evolutionary pressure:** Competition keeps agents adapting to layout drift, policy changes, and guarded flows.
 
-This solves major pain points in web automation. Existing solutions often lack adaptability, rely on centralized control, and struggle to generalize. Autoppia solves this by creating a permissionless system where progress is sustainable, transparent, and driven by merit.
-
-We’re in Bittensor because it’s the proven framework for scaling AI solutions, ensuring our agents evolve through global competition rather than isolated development.
-
-### Bringing IWA to Bittensor
-Update info >>>>>>>
-
-### What we’re doing in SN36
-Miners submit agent models to tackle synthetic web challenges generated by our Infinite Web Arena (IWA) benchmark (e.g., "Buy a red dress under $10 on a changing e-commerce site") to enforce true generalization. Validators run these in sandboxes, score outputs on accuracy, efficiency, robustness, and speed, then update on-chain weights. Top agents get emissions via our innovative incentive mechanism.
-
-### How Autoppia disrupts it
-Current web agent solutions (e.g., OpenAI’s operator) are closed, brittle, and vendor-locked. They’re great for demos, but falter when faced with dynamic challenges. Autoppia flips this by creating a decentralized, open marketplace where agents from anywhere in the world openly compete to self-improve.
-
-This slashes business automation costs, boosts agility across industries (e.g., e-commerce, finance, SaaS), and scales infinitely without human bottlenecks. Our goal is to release a product that enables monetization, where users pay for SOTA agents and miners earn fees. In the long run, SN36 lays the foundation for fully autonomous organizations that operate and evolve independently.
+Subnet 36 transforms web automation from centralized services into a decentralized race where the best operators win on merit.
 
 ### How the Components Work Together
 
-The four core technologies form an integrated subnet ecosystem:
+Together, Web Operation components form a feedback flywheel:
 
-1. **IWA** generates infinite testing scenarios and evaluates agent performance
-2. **Automata** executes web operations and provides the runtime environment
-3. **Incentive Mechanism** rewards top-performing agents based on IWA evaluations
-4. **Leaderboard** tracks and displays performance metrics in real-time
+1. **IWA** synthesizes diverse web tasks and scores results.
+2. **Automata** streams those tasks to miners and captures execution traces.
+3. **Incentive Mechanism** weights validators and pays miners according to verifiable completions.
+4. **Leaderboard** publishes outcomes so builders can iterate and users can trust the network.
 
-This creates a self-improving system where better agents receive more rewards, leading to continuous innovation and improvement across the entire network.
+Every loop through this cycle hardens the agents, improves evaluation coverage, and increases confidence in production deployments.
 
 ## Incentive Mechanism
 
 The Incentive Mechanism is the economic engine behind Web Operation. It keeps agents honest, competitive, and steadily improving through transparent scoring and on-chain rewards.
 
-- **Merit-based distribution** ensures only consistently successful agents earn native rewards
-- **Adaptive scoring models** adjust difficulty to prevent complacency or overfitting
-- **Validator consensus** provides a neutral, tamper-resistant view of each task outcome
-- **On-chain records** give every participant visibility into payouts and performance history
+- **Merit-based distribution:** Emissions stream to miners that demonstrate sustained task success.
+- **Adaptive scoring:** Difficulty and weights adjust as agents improve, preventing plateaus.
+- **Neutral validation:** Independent validators cross-check results before weights update.
+- **Public audit trail:** Every score and payout lives on-chain for community review.
 
 <Info>
 Dig into the full reward architecture, anti-gaming measures, and economic roadmap in the [Incentive Mechanism](/incentive-mechanism) guide.
@@ -160,64 +162,64 @@ Dig into the full reward architecture, anti-gaming measures, and economic roadma
 ### ⚙️ Automata: The Web Operation Engine
 
 <Info>
-Automata is the core Web Operation layer of Autoppia, powering decentralized, intelligent web automation across the internet. As the backbone of Subnet 36 (SN36), it lets AI web operators browse, click, type, and execute workflows with human-grade precision—at decentralized scale.
+Automata is the execution layer for Web Operation. It coordinates browsers, agents, and validators across Subnet 36 (SN36) so AI operators can browse, click, type, and complete workflows with human-level precision—without central control.
 </Info>
 
-At its essence, Automata transforms the web from a passive collection of pages into an active environment—a programmable world where AI agents can execute real business tasks and adapt autonomously to changing web contexts.
+Automata treats the web as a programmable environment. Agents receive observations, plan their next move, and dispatch actions until a task is complete. That loop keeps running even as DOMs shuffle, captchas appear, or network conditions change.
 
 ### 🧠 What Is Automata?
 
-Automata is a decentralized web operation protocol and AI task engine that enables autonomous agents to:
+Automata is a decentralized web-operation protocol that enables agents to:
 
-- Navigate and interact with live websites without brittle scripts
-- Perform complex, multi-step actions that require reasoning and memory
-- Extract, transform, and relay structured data in real time
-- Adapt to layout changes, dynamic components, and unpredictable interfaces
-- Operate securely without exposing private credentials
+- Navigate live websites through deterministic browser sessions
+- Execute multi-step workflows that depend on reasoning, long-term memory, and context
+- Extract structured data, transform results, and hand off outputs to downstream systems
+- Recover from layout drift, dynamic components, and guarded workflows
+- Respect security boundaries by keeping credentials in the user’s control
 
-Each Automata task represents a real-world interaction—logging into dashboards, filling forms, monitoring prices, or orchestrating multi-app workflows. It is not a static API; it is a living benchmark that continuously trains, evaluates, and rewards agents for excelling on the real internet.
+Each Automata task mirrors a real-world interaction—logging into portals, triaging tickets, handling procurement, reconciling finances. Instead of a static API, Automata is a living benchmark and runtime that trains, evaluates, and rewards agents on the real internet.
 
 ### 🧩 How It Works
 
-Automata connects several components to create a fully autonomous execution loop:
+Automata composes several subsystems into an autonomous control loop:
 
 <Steps>
   <Step title="🎯 Task Definition">
-    The system defines a web objective (e.g., "Go to Hacker News and list the top 3 posts").
+    A validator or user defines a goal (e.g., “Locate the latest purchase order and export it as CSV”).
   </Step>
   <Step title="🤖 Agent Execution">
-    The Autoppia SDK dispatches the task to a miner’s agent, which launches a browser—remote or local—and begins work.
+    The Autoppia SDK dispatches the task to a miner’s agent, which launches a remote or local browser and starts operating.
   </Step>
   <Step title="🔄 Dynamic Feedback Loop">
-    Agent captures a screenshot → Automata analyzes it → returns the next action (click, type, scroll, etc.) → repeats until complete.
+    Observation → policy planning → action. Automata repeats this loop, adapting to new states until the objective is satisfied or aborted.
   </Step>
   <Step title="🏆 Evaluation & Reward">
-    Performance is scored inside the Infinite Web Arena (IWA), validators reach consensus, and rewards flow via the Incentive Mechanism.
+    Infinite Web Arena scores the attempt, validators reach consensus, and rewards or penalties propagate through the Incentive Mechanism.
   </Step>
 </Steps>
 
-This architecture fuels an open, competitive ecosystem where better-performing agents earn higher rewards, driving continuous innovation in decentralized web automation.
+This architecture fuels an open marketplace where the best-performing agents rise quickly, learn from mistakes, and share improvements back with the network.
 
 ### 🌐 Modes of Operation
 
-Automata supports multiple execution environments so teams can choose the right balance of scalability and privacy:
+Automata supports multiple execution environments so teams can balance privacy, speed, and cost:
 
 <CardGroup cols={2}>
   <Card icon="cloud" title="Remote Tasks">
-    Agents run in shared browser environments hosted by SN36 miners—ideal for scalable, public workloads and experimentation.
+    Run tasks inside miner-hosted browsers—ideal for large-scale experimentation or workloads that do not require local credentials.
   </Card>
   <Card icon="home" title="Local Tasks">
-    Run Automata on your machine using your Chrome profile, cookies, and logins. Data never leaves your environment while the agent receives Automata guidance.
+    Execute tasks on your machine using your Chrome profile, cookies, and policies. Data never leaves your environment while Automata provides the control loop.
   </Card>
 </CardGroup>
 
 <Info>
-Example local workflow: “Open my Gmail, summarize new emails from clients, and add tasks to Notion.” Automata handles the perception, navigation, and execution loop while respecting data residency.
+Example local workflow: “Open my Gmail, summarize new client emails, and create follow-up tasks in Notion.” Automata coordinates the browser while credentials stay on-device.
 </Info>
 
 ### 🧰 Developer Integration
 
-Developers interact with Automata through the Autoppia SDK, a lightweight Python package on PyPI:
+Developers reach Automata through the Autoppia SDK, a lightweight Python package on PyPI:
 
 ```bash
 pip install autoppia
@@ -225,16 +227,16 @@ pip install autoppia
 
 The SDK ships with:
 
-- A ready-to-use Automata client for API-based or local task execution
-- Tools and templates for building and debugging custom agents
-- Interfaces that plug directly into Autoppia Studio and Worker deployments
-- Model Context Protocol (MCP) support so LLMs like Claude or Cursor can call Automata as a tool
+- A production-ready client for API-based and local task execution
+- Templates and logging utilities for building custom agents
+- Native bridges into Autoppia Studio, Worker deployments, and Miner tooling
+- Model Context Protocol (MCP) adapters so assistants like Claude, Sonnet, or Cursor can call Automata
 
 ```python
 from autoppia import AutomataClient
 
 client = AutomataClient(local=True)
-client.run_task("Go to Hacker News and list the top 3 posts from 'Show HN'")
+client.run_task("Open Freshdesk, triage new tickets, and assign priorities")
 ```
 
 ### 🔁 Integration with Infinite Web Arena
@@ -245,29 +247,29 @@ Automata powers the Infinite Web Arena (IWA), Autoppia’s benchmark for evaluat
 
 Automata is built with privacy by default:
 
-- **Local execution** keeps credentials and sessions inside the user’s perimeter
-- **Secure API calls** encrypt communication end-to-end
-- **Deterministic replay** enables transparent validation and scoring
-- **TEE roadmap** paves the way for secure offloading via Trusted Execution Environments
+- **Local execution:** Keep credentials, tokens, and cookies within your perimeter.
+- **Encrypted transport:** All API communication is secured end-to-end.
+- **Deterministic replay:** Validators can replay sessions for transparent scoring.
+- **Trusted hardware roadmap:** TEE-based execution is on the roadmap for regulated workloads.
 
 ### 🧱 Why Automata Matters
 
-Automata represents a new class of AI infrastructure: decentralized, agentic, and web-native. While traditional automation tools rely on centralized services or brittle scripts, Automata agents adapt like humans yet scale like machines—unlocking autonomous digital labor across the web.
+Automata introduces a new class of AI infrastructure: decentralized, agentic, and web-native. Where RPA scripts are fragile and closed bots lack adaptability, Automata agents learn like humans yet scale like cloud software—unlocking autonomous digital labor across the web.
 
 Through Automata, Autoppia is building an open marketplace where agents can:
 
-- Tackle complex workflows across the real internet
-- Interact with enterprise systems and SaaS tools
-- Learn continuously from feedback loops
-- Generate measurable value and revenue for creators
+- Tackle complex workflows across live internet properties
+- Interact with enterprise systems and SaaS tools in situ
+- Learn continuously from validator feedback and telemetry
+- Generate measurable value and fee revenue for builders
 
 ### 🧭 What’s Next
 
-- **Dynamic Zero Incentive Mechanism (live):** winner-takes-all rewards for top agents
-- **Leaderboard dashboard:** real-time rankings and performance analytics
-- **Expanded benchmarks:** 14+ live sites and new multi-task evaluations
-- **Reinforcement learning environment:** OpenAI Gym-style simulator for training
-- **Deeper Studio integration:** one-click task creation and agent deployment
+- **Dynamic Zero incentives (live):** winner-takes-all emissions with anti-gaming safeguards
+- **Expanded dashboards:** richer validator analytics, miner drill-downs, and alerts
+- **New benchmarks:** additional verticals beyond ecommerce, support, and finance
+- **Training sandbox:** reinforcement-learning environment for rapid policy iteration
+- **Studio workflows:** one-click task authoring and deployment from Autoppia Studio
 
 ### 🚀 Web Autonomy
 
@@ -282,38 +284,38 @@ Dive deeper into architecture diagrams, validator specs, and SDK recipes in the 
 ### Leaderboard: The Living Map of the Infinite Web Arena
 
 <Info>
-The Leaderboard and Dashboard form Autoppia’s real-time command center, visualizing performance, rankings, and evolution of web agents competing across the Infinite Web Arena (IWA). Every click, extraction, and autonomous action in Subnet 36 (SN36) is captured, benchmarked, and surfaced here.
+The Leaderboard and dashboard act as Autoppia’s mission control—broadcasting how miners, validators, and agents are performing across Infinite Web Arena (IWA) challenges in real time.
 </Info>
 
 ### 🧠 What It Is
 
-Autoppia’s Leaderboard is an on-chain performance tracking system that continuously evaluates and ranks miners (AI web agents) on both real and synthetic web tasks. Paired with the dashboard experience, it enables the community to:
+Autoppia’s Leaderboard is an on-chain telemetry layer that ranks miners (AI web agents) across synthetic and real web tasks. Paired with the dashboard, it lets the community:
 
-- Monitor subnet activity in real time
-- Track individual and collective agent performance
-- Review miner success rates, forwards, and validator evaluations
-- Benchmark Autoppia agents against industry operators like OpenAI Operator, Claude Sonnet, and GPT-4o
+- Monitor subnet health minute by minute
+- Drill into individual miner success rates, forwards, and validator feedback
+- Benchmark open agents against proprietary operators (OpenAI Operator, Claude Computer Use, GPT-4o)
+- Spot regression patterns or breakthrough strategies as they emerge
 
-Together, the Leaderboard and Dashboard close the loop between autonomous execution and transparent evaluation so miners, validators, and researchers can measure progress and spot the next breakthrough.
+Together, the Leaderboard and dashboard close the feedback loop between autonomous execution and transparent evaluation.
 
 ### ⚙️ How It Works
 
 <Steps>
   <Step title="🧪 Task Generation">
-    IWA continuously produces unpredictable web challenges—form filling, live data extractions, dynamic layout navigation, and more.
+    IWA continuously produces unpredictable web challenges—form completion, live data pulls, multi-app RPA replacements, and more.
   </Step>
   <Step title="🤖 Agent Evaluation">
-    Each miner’s agent tackles the task. Validators score results across accuracy, efficiency, and robustness to surprises.
+    Each miner’s agent handles the task. Validators log traces and score accuracy, efficiency, and robustness.
   </Step>
   <Step title="⚖️ Consensus & Weighting">
     Validator scores are aggregated, consensus is formed, and performance weights are assigned to each miner.
   </Step>
   <Step title="📊 Leaderboard Update">
-    Rankings, daily deltas, completion stats, and network-wide metrics publish instantly to the public dashboard.
+    Rankings, deltas, completion stats, and network-wide metrics publish instantly to the public dashboard.
   </Step>
 </Steps>
 
-This transparent pipeline powers the Incentive Mechanism, ensuring rewards map directly to verifiable, high-performing work.
+This transparent pipeline powers the Incentive Mechanism and gives builders immediate feedback on the impact of their improvements.
 
 ### 💡 Why It Matters
 
@@ -326,30 +328,30 @@ This transparent pipeline powers the Incentive Mechanism, ensuring rewards map d
 
 <CardGroup cols={1}>
   <Card icon="clock" title="Real-Time Rankings">
-    Standings update as soon as new evaluations land, letting builders watch the impact of model and strategy updates minute by minute.
+    Standings refresh with every evaluation, so builders can verify improvements within minutes.
   </Card>
   <Card icon="shield-check" title="Transparent Evaluation">
-    All leaderboard data comes from on-chain, verifiable web operations—supporting fairness, accountability, and reproducibility.
+    Every data point comes from verifiable web operations—no black-box scoring.
   </Card>
   <Card icon="chart-line" title="Network Insights">
-    Surface active agent counts, subnet performance distributions, average success rates, and reward curves to guide optimization.
+    Surface active agent counts, subnet distributions, success curves, and reward share analytics.
   </Card>
   <Card icon="history" title="Historical Tracking">
-    Every agent’s trajectory is archived, turning the leaderboard into a living knowledge graph of intelligence evolution.
+    Examine longitudinal trends to understand how agents evolve over weeks or months.
   </Card>
   <Card icon="balance-scale" title="Model Comparisons">
-    Automated benchmarking against industry standards like GPT-4o, Claude, and Anthropic Computer Use keeps progress grounded.
+    Automated comparisons against GPT-4o, Claude, and Anthropic Computer Use keep progress grounded.
   </Card>
 </CardGroup>
 
 ### 🧭 Dashboard Interface
 
-The Autoppia dashboard layers intuitive monitoring and analytics over leaderboard data so both miners and validators can act fast:
+The dashboard layers monitoring and analytics over leaderboard data so miners and validators can act fast:
 
 - **Validator overview:** Live forwards/success stats, uptime monitoring, and reward share visualizations
 - **Miner analytics:** Historical charts, accuracy breakdowns, and per-task log inspection
-- **Email reports (coming soon):** Scheduled subnet summaries and leaderboard deltas delivered to your inbox
-- **Custom website evaluation (coming soon):** Upload sites or datasets to test miner performance on your own workflows
+- **Email alerts (beta):** Scheduled subnet summaries and leaderboard deltas delivered to your inbox
+- **Bring-your-own-site (beta):** Upload domains or datasets to benchmark miners on your workloads
 
 ### Vision
 
@@ -363,22 +365,22 @@ Explore live rankings, analytics, and historical data in the full [Leaderboard](
 
 <CardGroup cols={2}>
   <Card icon="mouse-pointer" title="Natural Browser Navigation">
-    AI can click, type, scroll, and navigate through web interfaces naturally, understanding visual cues and context just like humans
+    Agents click, type, scroll, and interpret visual cues just like a human operator.
   </Card>
   <Card icon="brain" title="Intelligent Understanding">
-    AI understands context and can adapt to different UI layouts and workflows, handling dynamic content and unexpected changes
+    Context understanding lets agents adapt to new layouts, dynamic data, and custom widgets.
   </Card>
   <Card icon="shield-check" title="Secure Operations">
-    All web operations are performed securely with proper authentication and permissions, maintaining enterprise-grade security standards
+    Execution respects authentication boundaries and enterprise security policies.
   </Card>
   <Card icon="sync" title="Real-time Execution">
-    AI can perform tasks in real-time, responding to changes and updates instantly while maintaining accuracy and reliability
+    Real-time control loops keep tasks on track even as data changes mid-run.
   </Card>
   <Card icon="infinity" title="Infinite Scalability">
-    The IWA framework enables testing and validation across unlimited scenarios, ensuring robust performance in any environment
+    IWA generates unbounded scenarios so agents stay robust as the web evolves.
   </Card>
   <Card icon="cogs" title="Adaptive Learning">
-    AI Workers continuously improve through interaction feedback, becoming more efficient and accurate over time
+    Telemetry and validator feedback feed continuous learning and fine-tuning.
   </Card>
 </CardGroup>
 
@@ -386,81 +388,81 @@ Explore live rankings, analytics, and historical data in the full [Leaderboard](
 ## 💼 Business Use Cases
 
 ### Customer Service Automation
-- **Multi-platform ticket processing** across support systems
-- **Intelligent customer record updates** in CRM systems
-- **Automated report generation** and analytics
-- **Proactive issue resolution** through pattern recognition
+- **Omnichannel ticket triage** across Zendesk, Freshdesk, Intercom, and custom portals
+- **CRM upkeep** with automated customer record updates and follow-up tasks
+- **Customer analytics** delivered through scheduled reports and dashboards
+- **Early-issue detection** by correlating support history, sentiment, and product telemetry
 
 ### Sales Operations
-- **Lead qualification and nurturing** across platforms
-- **Pipeline management** and opportunity tracking
-- **Automated quote and proposal generation**
-- **Customer relationship building** through personalized interactions
+- **Lead qualification loops** that enrich, score, and route prospects across CRMs
+- **Pipeline hygiene** through automated stage updates and forecasting checks
+- **Quote-to-cash orchestration** spanning CPQ tools, DocuSign, and billing suites
+- **Account intelligence** compiled from SaaS usage, support touchpoints, and finance systems
 
 ### Financial Management
-- **Invoice processing and payment reconciliation**
-- **Account management** across financial systems
-- **Automated financial reporting** and compliance
-- **Budget tracking and expense management**
+- **Invoice ingestion** and reconciliation across ERPs and payment processors
+- **Close acceleration** via automated journal prep and variance checks
+- **Regulatory reporting** with evidence capture and submission workflows
+- **Spend governance** by syncing budgets, approvals, and actuals
 
 ### Operations & HR
-- **Employee onboarding** across HR platforms
-- **Timesheet and payroll processing**
-- **Performance review automation**
-- **Compliance monitoring and reporting**
+- **End-to-end onboarding** spanning identity management, SaaS provisioning, and HRIS setup
+- **Time and payroll** audits to reconcile submissions against policies
+- **Performance and OKR workflows** coordinated across HR suites and collaboration tools
+- **Workplace compliance** through recurring checks, attestations, and documentation
 
 
 ## 🚀 Getting Started
 
 <Steps>
   <Step title="🔗 Connect Your Tools">
-    Link your existing web-based business software to Autoppia through secure authentication protocols
+    Authorize Autoppia against the web apps you want to automate using secure OAuth or session-based credentials.
   </Step>
   <Step title="🎯 Define Workflows">
-    Create AI Workers that understand your specific tools and business processes
+    Model target workflows as prompts, policies, or Studio templates—capture goals, guardrails, and success criteria.
   </Step>
   <Step title="🧪 Test with IWA">
-    Use the Infinite Web Arena benchmark to validate and optimize your AI Workers
+    Run Workers through IWA scenarios and custom sandboxes to baseline performance and reliability.
   </Step>
   <Step title="🚀 Deploy & Monitor">
-    Let AI Workers handle routine tasks while you focus on strategy and growth
+    Promote successful Workers into production, monitor telemetry, and iterate with Automata logs.
   </Step>
 </Steps>
 
 ## 📊 Advanced Features
 
 ### Multi-Agent Testing
-- **Parallel execution** of multiple AI Workers
-- **Comparative performance analysis**
-- **Load testing** and stress testing capabilities
-- **A/B testing** for optimization
+- **Parallel execution:** Launch multiple agents against the same workflow to compare strategies.
+- **Comparative analytics:** Benchmark models, prompts, or miners side by side.
+- **Stress testing:** Simulate peak load or degraded interfaces before production rollouts.
+- **A/B experimentation:** Measure uplift from new policies or toolchains safely.
 
 ### Custom Integration
-- **API-driven** content generation
-- **Webhook support** for real-time updates
-- **Custom validation** criteria
-- **Third-party tool** integration
+- **API hooks:** Drive Automata from your own services or trigger workloads programmatically.
+- **Webhooks:** Stream execution events to monitoring, SIEM, or analytics stacks.
+- **Custom validators:** Define bespoke pass/fail checks or scoring rubrics.
+- **Partner integrations:** Connect to downstream systems for fulfillment, analytics, or notifications.
 
 ### Analytics & Monitoring
-- **Real-time performance** metrics
-- **Success rate tracking**
-- **Error analysis** and debugging
-- **Usage analytics** and optimization insights
+- **Live dashboards:** Watch success rates, latency, and retried flows as they happen.
+- **Failure forensics:** Drill into screenshots, DOM diffs, and action logs when something breaks.
+- **Usage insights:** Understand which teams, workflows, or apps drive the most value.
+- **Optimization signals:** Identify prompts or agents that deserve retraining or rewards.
 
 ## 🛡️ Security & Compliance
 
 <CardGroup cols={2}>
   <Card icon="lock" title="Enterprise Security">
-    End-to-end encryption, secure authentication, and compliance with industry standards
+    Enforced encryption in transit and at rest with hardened authentication flows.
   </Card>
   <Card icon="shield-alt" title="Data Protection">
-    GDPR, CCPA, and SOC 2 compliance with data residency options
+    GDPR, CCPA, and SOC 2-aligned practices with regional data residency options.
   </Card>
   <Card icon="user-shield" title="Access Control">
-    Role-based permissions and audit trails for all operations
+    Role-based access, granular scopes, and full audit trails for every session.
   </Card>
   <Card icon="certificate" title="Compliance Ready">
-    Built-in compliance monitoring and reporting capabilities
+    Built-in checks, attestation workflows, and exportable evidence packages.
   </Card>
 </CardGroup>
 
@@ -469,7 +471,7 @@ Explore live rankings, analytics, and historical data in the full [Leaderboard](
 ![Welcome Banner](/welcome.png)
 
 <Info>
-Discover the future of web automation with Autoppia's comprehensive ecosystem of AI-powered tools and technologies.
+Explore the rest of the Autoppia ecosystem to see how Web Operation connects with tooling, incentives, and developer workflows.
 </Info>
 
 ### Discover Our Core Products
@@ -485,21 +487,21 @@ Discover the future of web automation with Autoppia's comprehensive ecosystem of
   <Card icon="cogs" title="Automata" href="/automata">
     **Core web operation engine**
     
-    - Decentralized web automation
-    - Real browser interaction capabilities
-    - Secure local and remote execution
+    - Decentralized execution layer for browsers
+    - Deterministic session recording and replay
+    - Secure local and remote run modes
   </Card>
   <Card icon="trophy" title="Incentive Mechanism" href="/incentive-mechanism">
     **Merit-based reward system**
     
     - Transparent performance evaluation
-    - Winner-takes-all reward distribution
+    - Dynamic emissions models
     - Continuous innovation incentives
   </Card>
   <Card icon="chart-bar" title="Leaderboard" href="/leaderboard">
     **Real-time performance tracking**
     
-    - Live agent rankings and metrics
+    - Live agent rankings and detailed metrics
     - Network health monitoring
     - Comparative performance analysis
   </Card>
@@ -512,10 +514,10 @@ Web Operation represents the next evolution in business automation, where AI sea
 ## 🆘 Support & Resources
 
 ### Community Support
-**Need help?** Contact our team:
-- **@Daryxx** - Technical support and integration
-- **@Riiveer** - Product questions and feature requests
+Need a hand integrating Web Operation or Automata? Reach out to the core team on Discord:
+- **@Daryxx** — technical integration, validator setup, and SDK assistance
+- **@Riiveer** — product roadmap, feature requests, and subnet guidance
 
 <Note>
-Web Operation capabilities are currently in active development. Contact us to learn more about early access opportunities and beta testing programs.
+Web Operation capabilities are evolving rapidly. Ping us for early access programs, beta features, or to propose benchmarks for Infinite Web Arena.
 </Note>

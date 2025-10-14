@@ -1,5 +1,7 @@
 # 🧭 Mintlify — Complete Guide for Developers & Teams
 
+> Looking for the concise reference we maintain for this repo? See `guide.md`. It summarizes styling patterns, components, and workflows in one place.
+
 This document gives you a **comprehensive yet practical overview** of how to use **Mintlify**, tailored for developer workflows (including **Cursor**, VS Code, and Git‑based environments).
 
 ---
